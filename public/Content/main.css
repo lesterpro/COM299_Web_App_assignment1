@@ -1,0 +1,125 @@
+/*
+File name: main.css
+Student name: YuKit Tam 
+Student ID: 301221259
+Date: 2021-Oct-02
+
+
+*/
+
+
+
+
+
+
+
+body {
+    font-family: 'lato', sans-serif;
+    background-color: rgba(5, 5, 5, 0.808);    
+    height: 1000px;
+    background-image: repeating-linear-gradient(black, rgba(54, 54, 54, 0.192) 10%,black);
+  }
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+.hd1 { color: rgb(180, 180, 180); font-size:150px;   text-align: center;
+    margin: 20px 0;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.hd2 { color: rgb(180, 180, 180); font-size:80px;   text-align: center;}
+.hd3 { color: rgb(180, 180, 180); font-size:24px;   text-align: center;}
+.hd4 { color: rgb(180, 180, 180); font-size:36px;   text-align: center;}
+.tx1 { color: rgb(180, 180, 180); font-size:24px;   text-align: left; padding-top: 50px; padding-bottom: 50px;}
+.tx2 { color: rgb(180, 180, 180); font-size:24px;   text-align: left; padding-top: 5px; padding-bottom: 5px;}
+.tx3 { color: rgb(180, 180, 180); font-size:12px;   text-align: left; }
+.tx4 { color: rgb(180, 180, 180); font-size:14px;   text-align: left; }
+
+td {
+    color: rgb(180, 180, 180); 
+    font-size:30px;  
+    text-align: center;    
+}
+
+
+
+.icon {
+    width:20px;
+    height:20px;
+}
+
+.portrait {
+    width:300px;
+    height:300px;
+}
+
+.img1 {
+    width:800px;    
+}
+
+.img2 {
+    width:100px;
+}
+
+.quote {
+    text-align: right;
+    font-size:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.a1 {
+    font-size: 50;
+    text-align: center;
+    color:#666666;
+    padding:20px;
+}
+
+.a1:link {}
+.a1:visited {}
+  
+.a1:hover {
+    background-color: #333333;
+    color:#666666;
+    text-decoration: none;
+  }
+.a1:active {} 
+
+
+
+.a2 {
+    color:#666666;
+}
+
+.a2:link {}
+.a2:visited {}
+  
+.a2:hover {
+    color:#ffffff; text-decoration: none;
+  }
+.a2:active {} 
+
+.list-group {
+    background-color: #333333;
+}
+
+.list-group-item {
+    background-color: #333333;
+}
+
+
+
+
+
+
