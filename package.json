@@ -1,5 +1,5 @@
 {
-  "name": "comp229-f2020-week3",
+  "name": "comp229-assignment1",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -21,17 +21,17 @@
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
-  "description": "demo app for COMP229 Week 3",
+  "description": "Comp229 Assignment 1",
   "main": "index.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tsiliopoulos/COMP229-F2020-Week3.git"
+    "url": "git+https://github.com/lesterpro/COM299_Web_App_assignment1.git"
   },
-  "author": "Tom Tsiliopoulos",
+  "author": "YuKit Tam SID: 301221259",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tsiliopoulos/COMP229-F2020-Week3/issues"
+    "url": "https://github.com/lesterpro/COM299_Web_App_assignment1/issues"
   },
-  "homepage": "https://github.com/tsiliopoulos/COMP229-F2020-Week3#readme"
+  "homepage": "https://github.com/https://github.com/lesterpro/COM299_Web_App_assignment1#readme"
 }
