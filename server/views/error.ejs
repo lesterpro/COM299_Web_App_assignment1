@@ -1,0 +1,19 @@
+
+<!-- error page -->
+
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+
+<!-- list out the error msg-->
+<div class="container">
+    <h1 class='hd1'><%= message %></h1>
+    <h2 class='hd2'><%= error.status %></h2>
+    <pre><%= error.stack %></pre>
+</div>
+
+
+
+
+<%- include partials/footer.ejs %>

@@ -1,21 +1,11 @@
 #!/usr/bin/env node
 
-
-/***
-* File name: server.js
-* Student name: YuKit Tam 
-* Student ID: 301221259
-* Date: 2021-Oct-02
-* 
-* This is the starting point of the site
-****/
-
 /**
  * Module dependencies.
  */
 
-var app = require('./app');
-var debug = require('debug')('week-4:server');
+var app = require('./server/config/app');
+var debug = require('debug')('Assignement2');
 var http = require('http');
 
 /**

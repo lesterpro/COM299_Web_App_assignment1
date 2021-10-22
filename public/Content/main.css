@@ -2,16 +2,10 @@
 File name: main.css
 Student name: YuKit Tam 
 Student ID: 301221259
-Date: 2021-Oct-02
+Date: 2021-Oct-22
 
 
 */
-
-
-
-
-
-
 
 body {
     font-family: 'lato', sans-serif;
@@ -42,6 +36,11 @@ body {
 .tx2 { color: rgb(180, 180, 180); font-size:24px;   text-align: left; padding-top: 5px; padding-bottom: 5px;}
 .tx3 { color: rgb(180, 180, 180); font-size:12px;   text-align: left; }
 .tx4 { color: rgb(180, 180, 180); font-size:14px;   text-align: left; }
+
+.hd5 { color: rgb(0, 0, 0); font-size:14px;   text-align: left;}
+
+
+
 
 td {
     color: rgb(180, 180, 180); 

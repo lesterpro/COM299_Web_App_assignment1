@@ -1,0 +1,59 @@
+
+
+<!-- Page header  -->
+<%- include partials/header.ejs %>
+
+<!-- Nav bar  -->
+<%- include partials/main_nav.ejs %>
+
+
+<br><%=title %><br>
+
+
+<!-- Home page  -->
+<% if (title=='Home') { %>
+  
+  <%- include partials/home.ejs %>
+
+<!-- About page  -->
+<% } else if (title=='About') { %>
+  
+  <%- include partials/about.ejs %>
+
+<!-- Proejcts page  -->
+<% } else if (title=='Projects') { %>
+  
+  <%- include partials/projects.ejs %>
+
+
+<!-- Services page  -->  
+<% } else if (title=='Services') { %>
+  
+  <%- include partials/services.ejs %>
+
+<!-- Business Contactrs page  -->
+<% } else if (title=='BusinessContacts') { %>
+  
+  <%- include partials/businessContacts.ejs %>
+
+
+<!-- Contact page  -->
+<% } else if (title=='Contact') { %>
+  
+    <%- include partials/contact.ejs %>
+
+
+<!-- Go to error page is all missed  -->
+<% } else { %>
+  
+  <%- include error.ejs %>
+
+<% } %>
+
+
+
+
+
+
+<!-- Page footer  -->
+<%- include partials/footer.ejs %>
