@@ -54,8 +54,8 @@ module.exports.displayLoginPage = (req, res, next) => {
     }
 
 
-    //User.register({ username: 'yukit', email: 'yukit@aa.com',displayName: 'Lester' }, '123');
-    //User.register({ username: 'yukit2', email: 'yukit@aa.com',displayName: 'Lester2' }, '123');
+    User.register({ username: 'yukit', email: 'yukit@aa.com',displayName: 'Lester' }, '123');
+    User.register({ username: 'yukit2', email: 'yukit@aa.com',displayName: 'Lester2' }, '123');
     
 
 }
