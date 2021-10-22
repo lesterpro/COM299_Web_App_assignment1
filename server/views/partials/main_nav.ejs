@@ -3,6 +3,7 @@
 
 
 
+
 <!-- Main Navigation bar-->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -26,7 +27,7 @@
         <li  <% if (title=="Contact") { %>  class="active"  <% } %> ><a href="\contact"><span><img class="icon" src="\Assets\images\icon2.png"></img></span> Contact Me</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <% if (displayName) {%> 
+        <% if (displayName) {%>}
         <li><a href='\logout'> Log out (<%=displayName%>) </a></li>
         <% } else { %>
         <li><a href='\login'> Log in </a></li>
