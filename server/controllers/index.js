@@ -93,6 +93,7 @@ module.exports.processLoginPage = (req, res, next) => {
                 return next(err);
             }
 
+            /*
             const payload = 
             {
                 id: user._id,
@@ -100,10 +101,11 @@ module.exports.processLoginPage = (req, res, next) => {
                 username: user.username,
                 email: user.email
             }
+            */
 
-            const authToken = jwt.sign(payload, DB.Secret, {
-                expiresIn: 604800 // 1 week
-            });
+            //const authToken = jwt.sign(payload, DB.Secret, {
+            //    expiresIn: 604800 // 1 week
+            //});
 
             /* TODO - Getting Ready to convert to API
             res.json({success: true, msg: 'User Logged in Successfully!', user: {
