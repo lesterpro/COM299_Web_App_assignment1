@@ -30,9 +30,17 @@ module.exports.displayBusinessContacts = (req, res, next) => {
 
 //show add business contact page
 module.exports.displayAddPage = (req, res, next) => {
-    res.render('businessContact/add', {title: 'Add Business Contact', 
+
+
+    console.log ("add page controller: req.user - " + req.user);
+    
+
+    res.render('businessContact/add', {title: 'Add Business Contact',  req: req,
     displayName: req.user ? req.user.displayName : ''})          
 }
+
+
+
 
 //process the post request to add business contact
 module.exports.processAddPage = (req, res, next) => {

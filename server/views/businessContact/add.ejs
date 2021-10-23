@@ -2,15 +2,25 @@
 
 <%- include ../partials/main_nav.ejs %>
 
+<% 
+    isloginUser = false
+    if(typeof displayName == 'string' && displayName) 
+        isloginUser = true
+
+        isloginUser = true
+%>
+
+
+
 <!-- Content for the Add page -->
 <div class="container">
     <div class="row">
         <div class="offset-md-3 col-md-6">
-            <h1><%= title %></h1>
+            <h1 class="hd3"><%= title %></h1>
 
             <form class="form" method="POST">
                 <div class="form-group">
-                    <label for="nameTextField">Contact Name</label>
+                    <label for="nameTextField" class="tx4">Contact Name</label>
                     <input type="text" class="form-control"
                     id="nameTextField"
                     placeholder="Enter the Contact Name"
@@ -18,7 +28,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="authorTextField">Number</label>
+                    <label for="authorTextField" class="tx4">Number</label>
                     <input type="text" class="form-control"
                     id="authorTextField"
                     placeholder="Enter the Number"
@@ -26,7 +36,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="publishedTextField">Email</label>
+                    <label for="publishedTextField" class="tx4">Email</label>
                     <input type="text" class="form-control"
                     id="publishedTextField"
                     placeholder="Enter the Email"
@@ -46,7 +56,5 @@
 </div>
 
 
-
-<%- include ../partials/bottom_nav.ejs %>  
 
 <%- include ../partials/footer.ejs %>
