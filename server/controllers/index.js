@@ -37,6 +37,10 @@ module.exports.displayBusinessContactsPage = (req, res, next) => {
     res.render('index', { title: 'BusinessContacts', displayName: req.user ? req.user.displayName : ''});
 }
 
+
+
+
+
 module.exports.displayLoginPage = (req, res, next) => {
     // check if the user is already logged in
     if(!req.user)
@@ -52,11 +56,7 @@ module.exports.displayLoginPage = (req, res, next) => {
     {
         return res.redirect('/');
     }
-
-
-   // User.register({ username: 'yukit', email: 'yukit@aa.com',displayName: 'Lester' }, '123');
-   // User.register({ username: 'yukit2', email: 'yukit@aa.com',displayName: 'Lester2' }, '123');
-    
+ 
 
 }
 
@@ -120,8 +120,14 @@ module.exports.processLoginPage = (req, res, next) => {
     })(req, res, next);
 }
 
+module.exports.performLogout = (req, res, next) => {
+    req.logout();
+    res.redirect('/');
+}
 
 
+
+/*
 module.exports.displayRegisterPage = (req, res, next) => {
     // check if the user is not already logged in
     if(!req.user)
@@ -138,7 +144,8 @@ module.exports.displayRegisterPage = (req, res, next) => {
         return res.redirect('/');
     }
 }
-
+*/
+/*
 module.exports.processRegisterPage = (req, res, next) => {
     // instantiate a user object
     let newUser = new User({
@@ -147,7 +154,8 @@ module.exports.processRegisterPage = (req, res, next) => {
         email: req.body.email,
         displayName: req.body.displayName
     });
-
+*/
+/*
     User.register(newUser, req.body.password, (err) => {
         if(err)
         {
@@ -176,15 +184,16 @@ module.exports.processRegisterPage = (req, res, next) => {
             /* TODO - Getting Ready to convert to API
             res.json({success: true, msg: 'User Registered Successfully!'});
             */
-
+/*
             return passport.authenticate('local')(req, res, () => {
                 res.redirect('/book-list')
             });
         }
     });
 }
+*/
 
-module.exports.performLogout = (req, res, next) => {
-    req.logout();
-    res.redirect('/');
-}
+
+
+// User.register({ username: 'yukit', email: 'yukit@aa.com',displayName: 'Lester' }, '123');
+// User.register({ username: 'yukit2', email: 'yukit@aa.com',displayName: 'Lester2' }, '123');

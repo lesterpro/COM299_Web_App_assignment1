@@ -12,9 +12,9 @@ let cors = require('cors');
 let session = require('express-session');
 let passport = require('passport');
 
-let passportJWT = require('passport-jwt');
-let JWTStrategy = passportJWT.Strategy;
-let ExtractJWT = passportJWT.ExtractJwt;
+//let passportJWT = require('passport-jwt');
+//let JWTStrategy = passportJWT.Strategy;
+//let ExtractJWT = passportJWT.ExtractJwt;
 
 let passportLocal = require('passport-local');
 let localStrategy = passportLocal.Strategy;
@@ -34,7 +34,6 @@ mongoDB.once('open', ()=>{
 });
 
 let indexRouter = require('../routes/index');
-let usersRouter = require('../routes/users');
 let bcRouter = require('../routes/businessContacts');
 
 let app = express();
@@ -67,7 +66,7 @@ app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 
-// passport user configuration
+
 
 // create a User Model Instance
 let userModel = require('../models/user');
@@ -101,7 +100,7 @@ passport.use(strategy);
 
 // routing
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+//app.use('/users', usersRouter);
 app.use('/businessContacts', bcRouter);
 
 // catch 404 and forward to error handler
